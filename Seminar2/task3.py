@@ -27,6 +27,36 @@ print(count)
 # string2=input('What you are looking for? ')
 # print(string1.count(string2))
 
+
+str_1 = 'sdfdf sdfdf sdfdf xcgdfgh sdfdf gbs' 
+str_2 = 'sdfdf'
+
+counter = 0
+id_str_1 = list(range(len(str_1)))
+id_str_2 = list(range(len(str_2)))
+id_str_1_minus_str_2 = list(range(len(str_1) - len(str_2)))
+for i in id_str_1_minus_str_2:
+    if str_2[0] == str_1[i]:
+        for j in range(1,len(str_2)):
+            if str_2[j] != str_1[i + j]:
+                break
+        else:
+            counter += 1
+            
+print(f'Вторая строка встречается в первой {counter} раз')
+
+str_1 = 'sdfsdfsdfxcgvhdfghsdfgsdhdfghdfghdsfgdfbs' 
+str_2 = 'sdf'
+
+counter = 0
+for i in range(len(str_1) - len(str_2)):
+    print('str_1', i , '-', str_1[i])
+    if str_2 == str_1[i: i + len(str_2)]:
+        counter += 1
+            
+print(f'Вторая строка встречается в первой {counter} раз')
+
+
 # str1 = input('Введите строку 1: ')
 # str2 = input('Введите строку 2: ')
 # count = 0

@@ -8,7 +8,7 @@
 # print (d)
 
 
-n = int(input('Priny your N: '))
+n = int(input('Print your N: '))
 my_dict = {}
 for i in range(1,n+1):
     my_dict[i] = 3*i+1

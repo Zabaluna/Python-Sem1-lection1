@@ -4,9 +4,9 @@
 #     - 6782 -> 23
 #     - 0,56 -> 11
 
-num = float(input('Print your float number: '))
-if num < 0:
-    num *= -1
+num = abs(float(input('Print your float number: ')))
+# # if num < 0:
+# #     num *= -1
 # while num % 1 != 0:
 #     num = round(num*10, 10)
 # print(num)
@@ -22,6 +22,6 @@ if num < 0:
 
 sum=0
 for i in str(num):
-    if i != '.':
+    if i != '.' or i!=',':
         sum += int(i)
 print(sum)
