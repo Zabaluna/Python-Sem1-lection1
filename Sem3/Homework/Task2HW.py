@@ -3,3 +3,13 @@
 # *Пример:*
 # - [2, 3, 4, 5, 6] => [12, 15, 16];
 # - [2, 3, 5, 6] => [12, 15]
+
+# import random
+
+# num = int(input("Ведите число: "))  # = 5
+# my_list = []
+# for i in range(num):
+#     my_list.append(random.randint(-num, num))
+# print(my_list)
+
+my_list = [2, 3, 4, 5, 6]
