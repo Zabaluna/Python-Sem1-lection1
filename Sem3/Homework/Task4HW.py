@@ -11,4 +11,17 @@ while num > 0:
     num = num//2
 print(result)
 
+# string ToBin(int num)
+# {
+#     string result = "";
+#     string temp = "";
+#     while(num > 0)
+#     {
+#     temp = Convert.ToString(num%2);
+#     result = temp + result;
+#     num = num/2; 
+#     }
+#     return result;
+# }
 
+# Console.WriteLine(ToBin(2));
