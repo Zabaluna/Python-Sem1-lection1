@@ -9,6 +9,6 @@
 a, b = int(input('Введите a')), int(input('Введите b'))
 max_num = max(a, b)
 for i in range(max_num, (a * b) + 1, max_num):
-    if i % a == i % b == 0:
+    if i % a == 0 and i % b == 0:
         print(i)
         break
