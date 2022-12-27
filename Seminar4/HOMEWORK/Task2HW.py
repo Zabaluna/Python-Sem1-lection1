@@ -3,14 +3,14 @@
 # 78=2*3*13
 
 num = int(input('Print natural N: '))
-divider=2 # делитель по английски
-while divider <= num:
-    if num % divider == 0:
-        print(divider)
-        num//=divider
-        divider=2
+factor=2 #множитель по английски    divider -делитель
+while factor <= num:
+    if num % factor == 0:
+        print(factor)
+        num//=factor
+        factor=2
     else:
-       divider+=1
+       factor+=1
 
 
    
