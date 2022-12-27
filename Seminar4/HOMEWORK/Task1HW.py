@@ -4,9 +4,10 @@
 
 
 from decimal import *
+from math import pi
 d = int(input('Print the given number precision '))
 getcontext().prec = d
-result = Decimal(3.141592653589793238462643383279)/Decimal(1)
+result = Decimal(pi)/Decimal(1)
 print(result)
 
 # from math import pi
