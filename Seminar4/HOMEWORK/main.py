@@ -1,8 +1,9 @@
-from Task4HW import create_equation
-from Task4HW import decode
+from Task4HW import create_dictionary
+from Task4HW import polynomial
 
 if __name__ == "__main__":
-    equation = create_equation()
-    print(equation)
-    new_equation=decode(equation)
+    my_dict = create_dictionary()
+    print(my_dict)
+
+    new_equation=polynomial(my_dict)
     print(new_equation)
