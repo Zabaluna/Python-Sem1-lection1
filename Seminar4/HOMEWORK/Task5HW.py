@@ -48,3 +48,6 @@ def addition(first_eq: dict, second_eq: dict):
 final_eq = addition(backdictinary(first1), backdictinary(second2))
 print(final_eq)
 
+with open('D:\GB\PYTHON\Seminar4\HOMEWORK\
+    final_sum_polinoms.txt', 'w', encoding='UTF-8') as filek:
+        filek.write(final_eq)

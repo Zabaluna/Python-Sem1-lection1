@@ -43,7 +43,8 @@ def main():
     print(new_equation1)
    
     # записываем наш многчлен в файл
-    with open("new_equation_k.txt", "w", encoding='UTF-8') as filek:
+    with open('D:\GB\PYTHON\Seminar4\HOMEWORK\
+    new_equation_k.txt', 'w', encoding='UTF-8') as filek:
         filek.write(new_equation1)
      
 
