@@ -7,44 +7,45 @@
 
 import random
 
+# создаем словарь: ключ значение ( от 0 до 100)
 def create_dictionary():
     degree = int(input('Enter the k - degree:'))
     my_dict ={}
     for n in range(degree, -1, -1):
-        my_dict[n] = random.randint(0,100)
+        my_dict[n] = random.randint(0,101)
     return my_dict
 
 # my_dict = create_dictionary()
 # print(my_dict)
 
-
+# создаем многочлен
 def polynomial(my_dict:dict) -> str:
     new_equation = []
     for key, value in my_dict.items():
         if value != 0:
             new_equation.append(f'{value}*x**{key}')
     new_equation = ' + '.join(new_equation) + ' = 0'
-    new_equation = new_equation.replace('+-', '-')
+    # new_equation = new_equation.replace('+-', '-'), тк от 0 до 100 будет только плюс
     new_equation = new_equation.replace(' 1*x', ' x')
     new_equation = new_equation.replace('*x**0', '')
     new_equation = new_equation.replace('x**1', 'x')
     return new_equation
 
-# new_equation=decode(equation)
+# new_equation=polynomial(my_dict)
 # print(new_equation)
 
 def main():
-    print('Здесь начинается тело функции')
+   
     my_dict = create_dictionary()
     print(my_dict)
 
-    new_equation=polynomial(my_dict)
-    print(new_equation)
-    print('Здесь заканчивается тело функции')
-
-    with open("new_equation_k.txt", "w") as filek:
-        filek.write(new_equation)
-
+    new_equation1=polynomial(my_dict)
+    print(new_equation1)
+   
+    # записываем наш многчлен в файл
+    with open("new_equation_k.txt", "w", encoding='UTF-8') as filek:
+        filek.write(new_equation1)
+     
 
 if __name__ == "__main__":
     main()    
